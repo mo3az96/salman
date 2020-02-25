@@ -317,11 +317,13 @@ nav {
   color: #eea421;
 }
 
-header .mo-header .top-links {
-  right: 10px;
-  top: 26px;
-  left: auto;
-  z-index: 100;
+@media (max-width: 767px) {
+  header .mo-header .top-links {
+    right: 10px;
+    top: 26px;
+    left: auto;
+    z-index: 100;
+  }
 }
 @media (max-width: 767px) {
   header .mo-header .lang {
