@@ -1,0 +1,286 @@
+.main-slider {
+    position: relative;
+
+    .owl-dots {
+        position: absolute;
+        bottom: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include xs {
+            bottom: 10px;
+        }
+
+        .owl-dot {
+            background: rgba(#000, 0.4);
+            outline: none;
+            border: none;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0 2.5px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.active {
+                background: $orange;
+                pointer-events: none;
+            }
+
+            &:hover {
+                background: $orange;
+            }
+        }
+    }
+
+    .owl-nav {
+        width: 0;
+        height: 0;
+
+        button[class^=owl-] {
+            position: absolute;
+            top: 50%;
+            outline: none;
+            border: none;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            background: rgba($back, 0.4);
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 16.05px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.owl-next {
+                left: 67px;
+            }
+
+            &.owl-prev {
+                right: 67px;
+            }
+
+            &:hover {
+                color: $back;
+                background: #fff;
+            }
+        }
+    }
+}
+
+.sec-header {
+    font-size: 24px;
+    color: $back;
+    font-family: med;
+    text-align: center;
+    margin-bottom: 28px;
+
+    @include xs {
+        margin-bottom: 20px;
+    }
+}
+
+.bestseller,
+.special,
+.latest {
+    margin-top: 80px;
+
+    @include xs {
+        margin-top: 50px;
+    }
+}
+
+.Product-slider {
+    margin-top: 34px;
+
+    .owl-nav {
+        width: 0;
+        height: 0;
+
+        button[class^=owl-] {
+            position: absolute;
+            top: 95px;
+            outline: none;
+            border: none;
+            color: #777777;
+            font-size: 18px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.owl-next {
+                left: -40px;
+
+                @include md {
+                    left: -20px;
+                }
+            }
+
+            &.owl-prev {
+                right: -40px;
+
+                @include md {
+                    right: -20px;
+                }
+            }
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+
+    .owl-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+
+        .owl-dot {
+            background: rgba(#000, 0.502);
+            outline: none;
+            border: none;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0 2.5px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.active {
+                background: $orange;
+                pointer-events: none;
+            }
+
+            &:hover {
+                background: $orange;
+            }
+        }
+    }
+}
+
+.product {
+    margin: auto;
+    width: 208px;
+
+    .item-img {
+        width: 208px;
+        height: 208px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+        @include transition(all 0.3s ease-in-out);
+
+        img {
+            max-width: 100%;
+            height: auto;
+            width: auto;
+            max-height: 100%;
+            @include transition(all 0.3s ease-in-out);
+        }
+
+        &:hover {
+            border-color: $orange;
+
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .item-info {
+        padding: 16px 9px 0;
+    }
+
+    .pro-name {
+        font-size: 15px;
+        color: $back;
+        line-height: 1.267;
+        height: 61px;
+        display: inline-block;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    .mo-prices {
+        display: flex;
+        align-items: center;
+        margin-top: 18px;
+    }
+
+    .mo-old-price {
+        font-size: 16px;
+        color: #afafaf;
+        font-family: med;
+        text-decoration: line-through;
+        margin: 0 10px;
+    }
+
+    .mo-new-price {
+        font-size: 18px;
+        color: $back;
+        font-family: bold;
+    }
+}
+
+.brands-cont {
+    margin-top: 135px;
+
+    @include xs {
+        margin-top: 75px;
+    }
+
+    .owl-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+
+        .owl-dot {
+            background: rgba(#000, 0.502);
+            outline: none;
+            border: none;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0 2.5px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.active {
+                background: $orange;
+                pointer-events: none;
+            }
+
+            &:hover {
+                background: $orange;
+            }
+        }
+    }
+
+    .brand {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 94px;
+        height: 52px;
+
+        img {
+            width: auto;
+            height: auto;
+            @include transition(all 0.3s ease-in-out);
+        }
+
+        &:hover {
+            img {
+                transform: translateY(-5px);
+            }
+        }
+    }
+}
