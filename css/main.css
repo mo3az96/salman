@@ -55,6 +55,7 @@
 body {
   position: relative;
   font-family: tajwal;
+  overflow: hidden;
 }
 body::-webkit-scrollbar {
   background-color: rgba(46, 46, 46, 0.5);
