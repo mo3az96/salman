@@ -12,6 +12,8 @@
     // position: relative;
 
     img {
+        width: 250px;
+
         @include xs {
             width: 120px;
         }

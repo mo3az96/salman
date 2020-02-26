@@ -627,7 +627,7 @@ html[dir=ltr] nav .close-btn {
 .product .mo-prices {
   display: flex;
   align-items: center;
-  margin-top: 18px;
+  margin-top: 15px;
 }
 .product .mo-old-price {
   font-size: 16px;
@@ -748,6 +748,9 @@ html[dir=ltr] nav .close-btn {
   right: 0;
   background-color: #fff;
   z-index: 99999;
+}
+.loader img {
+  width: 250px;
 }
 @media (max-width: 767px) {
   .loader img {
