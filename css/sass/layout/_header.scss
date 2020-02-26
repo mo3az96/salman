@@ -18,6 +18,11 @@
         left: 0;
         display: flex;
         align-items: center;
+
+        #{$ltr} & {
+            left: auto;
+            right: 0;
+        }
     }
 
     .top-link {
@@ -25,6 +30,12 @@
         color: #939393;
         @include transition(all 0.3s ease-in-out);
         margin-left: 18px;
+        text-transform: capitalize;
+
+        #{$ltr} & {
+            margin-right: 18px;
+            margin-left: 0;
+        }
 
         &:hover {
             color: $orange;
@@ -39,6 +50,11 @@
         margin-right: 18px;
         position: relative;
 
+        #{$ltr} & {
+            margin-right: 0;
+            margin-left: 18px;
+        }
+
         .lang-anchor {
             font-size: 12px;
             color: #939393;
@@ -49,6 +65,11 @@
 
             img {
                 margin-left: 10px;
+
+                #{$ltr} & {
+                    margin-right: 10px;
+                    margin-left: 0;
+                }
             }
 
             &:after {
@@ -56,6 +77,11 @@
                 font-family: 'Linearicons-Free';
                 font-size: 8px;
                 margin-right: 6px;
+
+                #{$ltr} & {
+                    margin-right: 0;
+                    margin-left: 6px;
+                }
             }
 
             &:hover {
@@ -127,6 +153,16 @@
 
                 &:before {
                     right: 15px;
+
+                    #{$ltr} & {
+                        right: auto;
+                        left: 13px;
+                    }
+                }
+
+                #{$ltr} & {
+                    right: auto;
+                    left: -13px;
                 }
             }
         }
@@ -146,7 +182,7 @@
 
         @include xs {
             width: 150px;
-            margin-bottom: 15px;
+            margin-bottom: 25px;
         }
     }
 }
@@ -162,12 +198,29 @@
     align-items: center;
     margin-right: 62px;
 
+    #{$ltr} & {
+        margin-right: 0;
+        margin-left: 62px;
+    }
+
     @include md {
         margin-right: 25px;
+
+        #{$ltr} & {
+            margin-right: 0;
+            margin-left: 25px;
+        }
+
     }
 
     @include xs {
         margin-right: 0;
+
+        #{$ltr} & {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
     }
 
     .user-anchor {
@@ -179,17 +232,33 @@
         position: relative;
         @include transition(all 0.3s ease-in-out);
 
+        #{$ltr} & {
+            margin-right: 20px;
+            margin-left: 0;
+        }
+
         @include xs {
             font-size: 20px;
         }
 
         &:last-of-type {
             margin-left: 0;
+
+            #{$ltr} & {
+                margin-right: 0;
+                margin-left: 0;
+            }
+
         }
 
         .mo-text {
             font-size: 14px;
             margin-right: 7px;
+
+            #{$ltr} & {
+                margin-right: 0;
+                margin-left: 7px;
+            }
 
             @include sm {
                 display: none;
@@ -220,6 +289,11 @@
         @include xs {
             display: flex;
             margin-left: 20px;
+
+            #{$ltr} & {
+                margin-right: 20px;
+                margin-left: 0;
+            }
         }
     }
 
@@ -235,6 +309,11 @@
 .user-anchor-div {
     margin-left: 20px;
     position: relative;
+
+    #{$ltr} & {
+        margin-right: 20px;
+        margin-left: 0;
+    }
 
     &:hover {
         .mo-log-icon {

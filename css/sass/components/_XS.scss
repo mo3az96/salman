@@ -6,6 +6,11 @@ header {
                 top: 26px;
                 left: auto;
                 z-index: 100;
+
+                #{$ltr} & {
+                    right: auto;
+                    left: 10px;
+                }
             }
         }
 
