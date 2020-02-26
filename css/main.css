@@ -688,13 +688,14 @@ html[dir=ltr] nav .close-btn {
 .brands-cont .brand img {
   width: auto;
   height: auto;
+  backface-visibility: hidden;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .brands-cont .brand:hover img {
-  transform: translateY(-5px);
+  transform: scale(0.95);
 }
 
 @media (max-width: 767px) {

@@ -274,12 +274,13 @@
         img {
             width: auto;
             height: auto;
+            backface-visibility: hidden;
             @include transition(all 0.3s ease-in-out);
         }
 
         &:hover {
             img {
-                transform: translateY(-5px);
+                transform: scale(0.95);
             }
         }
     }
