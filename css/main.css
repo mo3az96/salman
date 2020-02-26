@@ -497,7 +497,8 @@ html[dir=ltr] nav .close-btn {
 }
 @media (max-width: 767px) {
   .sec-header {
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 15px;
   }
 }
 
@@ -516,6 +517,11 @@ html[dir=ltr] nav .close-btn {
 
 .Product-slider {
   margin-top: 34px;
+}
+@media (max-width: 767px) {
+  .Product-slider {
+    margin-top: 5px;
+  }
 }
 .Product-slider .owl-nav {
   width: 0;
@@ -630,10 +636,23 @@ html[dir=ltr] nav .close-btn {
 .product .pro-name:hover {
   color: #eea421;
 }
+@media (max-width: 767px) {
+  .product .pro-name {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+  }
+}
 .product .mo-prices {
   display: flex;
   align-items: center;
   margin-top: 15px;
+}
+@media (max-width: 767px) {
+  .product .mo-prices {
+    justify-content: center;
+  }
 }
 .product .mo-old-price {
   font-size: 16px;

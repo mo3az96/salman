@@ -134,6 +134,7 @@ $(document).ready(function () {
             $("nav").fadeOut(400);
             $(".mo-navbar").removeClass("nav-in");
             $("body").toggleClass("overflow");
+            $(".lang").removeClass("lang-in");
         });
     }
 

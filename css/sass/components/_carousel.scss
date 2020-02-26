@@ -79,7 +79,9 @@
     text-transform: capitalize;
 
     @include xs {
-        margin-bottom: 20px;
+
+        font-size: 20px;
+        margin-bottom: 15px;
     }
 }
 
@@ -95,6 +97,10 @@
 
 .Product-slider {
     margin-top: 34px;
+
+    @include xs {
+        margin-top: 5px;
+    }
 
     .owl-nav {
         width: 0;
@@ -206,12 +212,23 @@
         &:hover {
             color: $orange;
         }
+
+        @include xs {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: center;
+        }
     }
 
     .mo-prices {
         display: flex;
         align-items: center;
         margin-top: 15px;
+
+        @include xs {
+            justify-content: center;
+        }
     }
 
     .mo-old-price {
