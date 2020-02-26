@@ -903,6 +903,10 @@ html[dir=ltr] .mo-header .lang .lang-anchor:after {
   position: absolute;
   right: 26px;
 }
+html[dir=ltr] .mo-header .lang .lang-dropdown:before {
+  right: auto;
+  left: 26px;
+}
 .mo-header .lang .lang-dropdown .lang-anchor {
   width: 100%;
   border-bottom: 1px solid #ededed;
